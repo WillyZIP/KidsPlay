@@ -89,7 +89,7 @@ main {
 }
 
 .toy img {
-    width: calc(50% - 10px); /* Moins de 100% pour tenir compte de la marge */
+    width: calc(20% - 10px); /* Moins de 100% pour tenir compte de la marge */
     height: auto;
     border-radius: 8px; /* Coins arrondis pour les images */
 }
