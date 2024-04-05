@@ -1,24 +1,18 @@
-/* Reset de base pour uniformiser les navigateurs */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Styles de base */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #F4F9F9;
+    color: #102A43;
     line-height: 1.6;
     padding: 20px;
+    margin: 0;
 }
 
 header {
-    background-color: #005f73;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    background-color: #3D5A80; /* Une couleur plus vive pour l'en-tête */
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 
 nav ul {
@@ -33,112 +27,100 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
-}
-
-h1, h2 {
-    color: #003049;
-}
-
-.toy {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.toy img {
-    max-width: 100%;
-    height: auto;
+    padding: 5px 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.toy h3 {
-    color: #d62828;
-    margin-top: 0;
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #DBE2EF; /* Couleur subtile pour le hover */
 }
 
-.toy p {
-    margin: 10px 0;
-    line-height: 1.5;
+h1, h2, h3 {
+    color: #3D5A80;
 }
 
-footer {
-    background-color: #003049;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    position: relative;
-    bottom: 0;
-    width: calc(100% - 40px);
-}
-/* ... autres styles ... */
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #005f73;
-    padding: 10px;
+/* Encadrement et espacement pour les sections */
+.section {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background: white; /* Fond blanc pour faire ressortir les sections */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Ombre douce pour le relief */
 }
 
+.section + .section {
+    margin-top: 1.5rem;
+}
+
+/* Boutons stylisés */
+.btn {
+    display: inline-block;
+    background: #EF476F; /* Une couleur vive pour les boutons */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* Effet de léger soulèvement */
+}
+
+/* Styles pour la section principale (hero) */
 .hero {
     text-align: center;
-    padding: 50px;
-    background: #eae2b7; /* Couleur de fond temporaire */
+    background: #DBE2EF; /* Fond clair pour la section hero */
+    padding: 4rem 2rem; /* Plus d'espace */
+    border-radius: 15px;
 }
 
 .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 0.5rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-.btn {
-    text-decoration: none;
-    color: white;
-    background-color: #003049;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn-primary {
-    background-color: #d62828;
-}
-
-.btn-secondary {
-    background-color: #f77f00;
-}
-
-.btn:hover {
-    background-color: #fcbf49;
-}
-
-.featured-toys {
+/* Styles pour la section des catégories */
+.categories {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
-.featured-toys article {
-    padding: 15px;
-    background-color: white;
+.category-card {
+    background: #3D5A80; /* Couleur de fond distincte pour les catégories */
+    color: white;
+    padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
+
+.category-card:hover {
+    background: #293241; /* Assombrissement au survol */
+}
+
+footer {
+    background-color: #3D5A80;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajoutez tout autre style que vous souhaitez personnaliser */
 
 .featured-toys h3 {
     margin-top: 0;
