@@ -2,29 +2,47 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jouets Pour Tous - Accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Jouets Pour Tous</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-bar">
+            <h1>Jouets Pour Tous</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="introduction">
+        <div class="hero">
             <h2>Bienvenue chez Jouets Pour Tous</h2>
             <p>Découvrez notre large sélection de jouets pour enfants, disponibles à la location et à l'achat. Des jouets de qualité à des prix abordables pour le bonheur des petits et des grands !</p>
+            <a href="catalogue.html" class="btn btn-primary">Découvrir le catalogue</a>
+        </div>
+        <section class="featured-toys">
+            <article>
+                <h3>Jouets Éducatifs</h3>
+                <p>Stimulez l'apprentissage et la créativité avec notre gamme de jouets éducatifs. Parfaits pour les jeunes esprits curieux.</p>
+                <a href="catalogue.html#educatifs" class="btn btn-secondary">Explorer</a>
+            </article>
+            <article>
+                <h3>Peluches et Doudous</h3>
+                <p>Découvrez nos amis doux et câlins qui deviendront les compagnons préférés de vos enfants, de jour comme de nuit.</p>
+                <a href="catalogue.html#peluches" class="btn btn-secondary">Voir la collection</a>
+            </article>
         </section>
     </main>
     <footer>
         <p>Contactez-nous pour plus d'informations.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
 
