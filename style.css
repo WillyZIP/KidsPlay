@@ -70,6 +70,56 @@ nav ul li a {
     border-radius: 8px;
 }
 
+main {
+    max-width: 1200px; /* Ou la largeur que vous préférez */
+    margin: 0 auto; /* Centrer le contenu de la page */
+    padding: 1em;
+}
+
+.toy {
+    background: #f9f9f9; /* Couleur de fond pour chaque jouet */
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 10px; /* Coins arrondis pour les cartes de jouets */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre pour donner de la profondeur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Répartit l'espace autour des éléments */
+    gap: 20px; /* Espace entre les images et le texte */
+}
+
+.toy img {
+    width: calc(50% - 10px); /* Moins de 100% pour tenir compte de la marge */
+    height: auto;
+    border-radius: 8px; /* Coins arrondis pour les images */
+}
+
+.toy h3 {
+    width: 100%; /* Full width to ensure title is aligned correctly */
+    margin: 0.5em 0;
+}
+
+.toy p {
+    width: calc(50% - 10px); /* Moins de 100% pour tenir compte de la marge */
+    text-align: justify;
+}
+
+.toy .price {
+    width: 100%; /* Le prix prend toute la largeur de sa colonne */
+    text-align: left;
+    font-weight: bold;
+    color: #E63946; /* Couleur pour le prix */
+}
+
+@media (max-width: 768px) {
+    .toy img,
+    .toy p,
+    .toy .price {
+        width: 100%; /* Les éléments prennent toute la largeur sur les appareils mobiles */
+    }
+}
+
+
 /* Styles pour les prix */
 .price {
     color: #E63946;
