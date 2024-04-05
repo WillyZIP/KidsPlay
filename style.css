@@ -89,10 +89,12 @@ main {
 }
 
 .toy img {
-    width: calc(20% - 10px); /* Moins de 100% pour tenir compte de la marge */
+    width: 150px; /* Taille fixe plus petite pour les images */
     height: auto;
-    border-radius: 8px; /* Coins arrondis pour les images */
+    margin-right: 10px;
+    border-radius: 8px;
 }
+
 
 .toy h3 {
     width: 100%; /* Full width to ensure title is aligned correctly */
