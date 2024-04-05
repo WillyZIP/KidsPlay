@@ -89,7 +89,7 @@ main {
 }
 
 .toy img {
-    width: 150px; /* Taille fixe plus petite pour les images */
+    width: 300px; /* Taille fixe plus petite pour les images */
     height: auto;
     margin-right: 10px;
     border-radius: 8px;
