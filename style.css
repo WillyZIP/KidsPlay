@@ -6,16 +6,13 @@ body {
     line-height: 1.6;
     padding: 20px;
     margin: 0;
+    text-align: center; /* Centrer le texte de tout le corps */
 }
 
-header .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .nav-container {
     background-color: #3D5A80;
     color: white;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 1rem 0;
 }
 
 nav ul {
@@ -36,101 +33,57 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #DBE2EF;
-}
-
-.hero-section {
-    text-align: center;
-    padding: 4rem 2rem;
+/* Styles pour la section hero */
+.hero {
     background: #DBE2EF;
-    border-radius: 15px;
+    padding: 2rem;
     margin-bottom: 2rem;
+    border-radius: 15px;
+    border: 5px solid #3D5A80; /* Encadrement plus épais */
 }
 
-.hero-section h2 {
-    font-size: 2.5rem;
-    color: #3D5A80;
-    margin-bottom: 0.5rem;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.btn-primary {
-    background-color: #EF476F;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #FFD166;
-}
-
+/* Styles pour les produits phares */
 .featured-products {
-    text-align: center;
+    margin: 2rem auto; /* Centrage horizontal */
     padding: 2rem;
     background-color: #F8FAFC;
     border-radius: 15px;
-    margin-bottom: 2rem;
-}
-
-.featured-products h2 {
-    color: #3D5A80;
-    margin-bottom: 1.5rem;
+    border: 5px solid #3D5A80; /* Encadrement plus épais */
 }
 
 .product-card {
     border: 1px solid #DDE7E7;
+    margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
     background-color: white;
-    margin: 1rem auto;
-    width: calc(50% - 2rem);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Centrage des cartes de produits */
+    margin: 1rem;
+    width: calc(50% - 4rem); /* Adaptation de la largeur pour le centrage */
+    vertical-align: top; /* Aligner les cartes de produit correctement */
 }
 
+/* Styles pour les images de produits */
 .product-card img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
-.product-card h3 {
-    color: #3D5A80;
-    margin-bottom: 0.5rem;
-}
-
-.product-card p {
-    margin-bottom: 0.5rem;
-}
-
+/* Styles pour les prix */
 .price {
     color: #E63946;
-    font-size: 1.25rem;
     font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
 }
 
-footer {
-    background-color: #3D5A80;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+/* Adaptations pour les mobiles */
 @media (max-width: 768px) {
     .product-card {
-        width: 100%;
+        width: calc(100% - 2rem); /* Pleine largeur pour les écrans mobiles */
     }
 }
+
+/* Ajoutez d'autres styles personnalisés selon vos préférences */
 
